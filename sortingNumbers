@@ -1,0 +1,14 @@
+function sorting(input){
+    let result = []
+    input.sort( (a, b) => a - b);
+    const  count = Math.floor(input.length / 2)
+
+
+    for(i = 0; i < count; i++){
+        result.push(input[i]);
+        result.push(input[input.length - 1 - i]);
+    }
+    return result.join('\n')
+
+
+}
